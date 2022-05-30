@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# @name Asctec Pelican Quadrotor SITL
+#
+# @type Quadrotor Wide
+#
+#
+#
+
+. ${R}etc/init.d/rc.mc_defaults
+
+set MIXER quad_w
