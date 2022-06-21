@@ -3,7 +3,8 @@
         {
             "name": "PX4",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/build/px4_sitl_default/build_gazebo"
             ],
             "defines": [],
             "macFrameworkPath": [],

@@ -178,6 +178,7 @@ set(models
 	uuv_bluerov2_heavy
 	uuv_hippocampus
 	pelican
+	x500
 )
 
 set(worlds
