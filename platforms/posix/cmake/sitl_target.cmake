@@ -177,8 +177,8 @@ set(models
 	typhoon_h480_ctrlalloc
 	uuv_bluerov2_heavy
 	uuv_hippocampus
-	pelican
 	x500
+	pelican
 )
 
 set(worlds
