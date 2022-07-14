@@ -179,7 +179,10 @@ private:
 	control::BlockDerivative _vel_y_deriv; /**< velocity derivative in y */
 	control::BlockDerivative _vel_z_deriv; /**< velocity derivative in z */
 
-	PositionControl _control;  /**< class for core PID position control */
+	// ControlMethod == SMPositionControl or PIDPositionControl
+	// PositionControl<ControlMethod> _control
+	PositionControl<PIDPositionControl> _control;  /**< class for core position control */
+
 
 	hrt_abstime _last_warn{0}; /**< timer when the last warn message was sent out */
 
@@ -220,6 +223,7 @@ private:
 	 * Check for validity of positon/velocity states.
 	 */
 	PositionControlStates set_vehicle_states(const vehicle_local_position_s &local_pos);
+
 
 	/**
 	 * Failsafe.
